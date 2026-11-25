@@ -1,4 +1,4 @@
-# Download Sorter
+# Downloads Landing Zone
 
 Chrome / Edge extension that saves each download into a subfolder by source site and file type.
 
