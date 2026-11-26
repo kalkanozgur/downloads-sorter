@@ -4,8 +4,6 @@
 
 Chrome / Edge extension that saves each download into a subfolder by source site and file type — at download time, nothing is moved afterwards.
 
-Türkçe açıklama aşağıda.
-
 ![Rules](assets/screenshot-1-rules-en.png)
 ![Try a download, statistics and recent downloads](assets/screenshot-2-try-en.png)
 
@@ -25,24 +23,10 @@ Türkçe açıklama aşağıda.
 - **Manual (from [Releases](https://github.com/kalkanozgur/downloads-sorter/releases/latest)):** download the `-chrome.zip` (or `-edge.zip`), extract it to a folder, open `chrome://extensions` (`edge://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder.
 
 ## Privacy
-Only `downloads` and `storage` permissions. No network requests, no analytics, no remote code. The optional history keeps only file name and site name. Full text: [Privacy Policy / Gizlilik Politikası](privacy/).
+Only `downloads` and `storage` permissions. No network requests, no analytics, no remote code. The optional history keeps only file name and site name. Full text: [Privacy Policy](privacy/).
 
 ## Support
 [Issues](https://github.com/kalkanozgur/downloads-sorter/issues)
-
----
-
-## Türkçe
-
-Her indirmeyi, indirildiği anda kaynak siteye ve dosya türüne göre `Downloads/<Klasör>/` altına kaydeden Chrome / Edge eklentisi.
-
-- **Karar sırası:** site kuralı → dosya uzantısı → Downloads kökü.
-- **Özellikler:** kural ekle/sil/sırala, klasör adında `{domain}` ve tarih, "İndirme dene" önizlemesi, klasör istatistiği, son indirmelerden tek tıkla kural, JSON içe/dışa aktarma, TR/EN arayüz.
-- **Kurulum:** Chrome Web Store yakında. Elle: [Releases](https://github.com/kalkanozgur/downloads-sorter/releases/latest) sayfasından `-chrome.zip`'i indir, bir klasöre aç, `chrome://extensions` → **Geliştirici modu** → **Paketlenmemiş öğe yükle**.
-- **Gizlilik:** yalnız `downloads` ve `storage` izni; ağ isteği, analitik, uzak kod yok. [Gizlilik Politikası](privacy/)
-
-![Kurallar](assets/screenshot-1-rules-tr.png)
-![İndirme dene](assets/screenshot-2-try-tr.png)
 
 ---
 Source code is developed in a private repository; this repository hosts the public pages and releases.
