@@ -1,8 +1,48 @@
+<img src="assets/icon-128.png" width="96" height="96" alt="Downloads Landing Zone icon">
+
 # Downloads Landing Zone
 
-Chrome / Edge extension that saves each download into a subfolder by source site and file type.
+Chrome / Edge extension that saves each download into a subfolder by source site and file type — at download time, nothing is moved afterwards.
 
-- [Privacy Policy / Gizlilik Politikası](privacy/)
-- Support / Destek: [https://github.com/kalkanozgur/downloads-sorter/issues](https://github.com/kalkanozgur/downloads-sorter/issues)
+Türkçe açıklama aşağıda.
 
-This repository hosts the public pages only; development happens elsewhere.
+![Rules](assets/screenshot-1-rules-en.png)
+![Try a download, statistics and recent downloads](assets/screenshot-2-try-en.png)
+
+## How it decides
+1. **Site rules** — makerworld / printables / thingiverse → `3D`, GitHub source archives → `Repos`, datasheet PDFs from Mouser, Digi-Key, TI… → `Datasheets`. Subdomains and download CDNs are recognised.
+2. **File type** — installers, archives, documents, images, media, firmware, disk images and code each get their own folder.
+3. Anything else stays in the Downloads root.
+
+## Features
+- Add, remove, reorder and switch off rules; limit a site rule to certain extensions.
+- Folder names can use `{domain}`, `{yyyy}`, `{mm}`, `{dd}` — e.g. `Sites/{domain}`, `Invoices/{yyyy}-{mm}`.
+- "Try a download" preview, per-folder statistics, recent downloads with one-click "Create rule".
+- Export / import rules as JSON. English and Turkish UI.
+
+## Install
+- **Chrome Web Store:** coming soon.
+- **Manual (from [Releases](https://github.com/kalkanozgur/downloads-sorter/releases/latest)):** download the `-chrome.zip` (or `-edge.zip`), extract it to a folder, open `chrome://extensions` (`edge://extensions`), turn on **Developer mode**, click **Load unpacked** and pick the folder.
+
+## Privacy
+Only `downloads` and `storage` permissions. No network requests, no analytics, no remote code. The optional history keeps only file name and site name. Full text: [Privacy Policy / Gizlilik Politikası](privacy/).
+
+## Support
+[Issues](https://github.com/kalkanozgur/downloads-sorter/issues)
+
+---
+
+## Türkçe
+
+Her indirmeyi, indirildiği anda kaynak siteye ve dosya türüne göre `Downloads/<Klasör>/` altına kaydeden Chrome / Edge eklentisi.
+
+- **Karar sırası:** site kuralı → dosya uzantısı → Downloads kökü.
+- **Özellikler:** kural ekle/sil/sırala, klasör adında `{domain}` ve tarih, "İndirme dene" önizlemesi, klasör istatistiği, son indirmelerden tek tıkla kural, JSON içe/dışa aktarma, TR/EN arayüz.
+- **Kurulum:** Chrome Web Store yakında. Elle: [Releases](https://github.com/kalkanozgur/downloads-sorter/releases/latest) sayfasından `-chrome.zip`'i indir, bir klasöre aç, `chrome://extensions` → **Geliştirici modu** → **Paketlenmemiş öğe yükle**.
+- **Gizlilik:** yalnız `downloads` ve `storage` izni; ağ isteği, analitik, uzak kod yok. [Gizlilik Politikası](privacy/)
+
+![Kurallar](assets/screenshot-1-rules-tr.png)
+![İndirme dene](assets/screenshot-2-try-tr.png)
+
+---
+Source code is developed in a private repository; this repository hosts the public pages and releases.
